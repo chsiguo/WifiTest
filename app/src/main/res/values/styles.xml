@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>-->
+    </style>
+    <!--<style name="Theme.AppCompat.Light.Dialog.Alert.Self"-->
+        <!--parent="@style/Theme.AppCompat.Light.Dialog.Alert">-->
+        <!--&lt;!&ndash;修改AlertDialog按钮的颜色&ndash;&gt;-->
+        <!--<item name="colorAccent">#3F51B5</item>-->
+    <!--</style>-->
+
+    <style name="AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <!-- 这里设置背景为透明，为了隐藏边框 -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@color/white</item>
+        <!-- 这里是修改内容区域背景颜色 -->
+        <item name="android:centerDark">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="buttonBarPositiveButtonStyle">@style/positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/negative</item>
+    </style>
+
+    <style name="positive">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">#3F51B5</item>
+    </style>
+    <style name="negative">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">#3F51B5</item>
+    </style>
+
+
+    <style name="dialog_dl" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>
