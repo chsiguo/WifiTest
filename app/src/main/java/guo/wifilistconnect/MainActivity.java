@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "finger";
     private static final int MY_RECO = 1203;
-    boolean flags = false;
     StringBuilder stringBuilder;
 
     private static final int REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS = 1;
@@ -86,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
                     .setPositiveButton("Settings", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            flags = true;
                             Intent intent = new Intent("android.settings.SECURITY_SETTINGS");
                             startActivityForResult(intent,MY_RECO);
                             Toast.makeText(MainActivity.this, "remeber to Home by pressing BACK", Toast.LENGTH_LONG).show();
